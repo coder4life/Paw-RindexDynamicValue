@@ -1,0 +1,26 @@
+{
+  "name": "com.coder4life.PawExtensions.RindexDynamicValue",
+  "version": "1.0.0",
+  "description": "Rindex code.",
+  "main": "./src/com.coder4life.PawExtensions.RindexDynamicValue/RindexDynamicValue.js",
+  "author": "Joshua Weiss",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coder4life/paw-rindexdynamicvalue.git"
+  },
+  "dependencies": {
+    "html-entities": "^1.2.0",
+    "lodash.escaperegexp": "^4.1.1",
+    "lodash.get": "^4.2.1",
+    "lodash.isinteger": "^4.0.2",
+    "lodash.random": "^3.1.4",
+    "lodash.size": "^4.0.6"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
