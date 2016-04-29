@@ -2,7 +2,7 @@
   "name": "com.coder4life.PawExtensions.RindexDynamicValue",
   "version": "1.0.0",
   "description": "Rindex code.",
-  "main": "./src/com.coder4life.PawExtensions.RindexDynamicValue/RindexDynamicValue.js",
+  "main": "RindexDynamicValue.js",
   "author": "Joshua Weiss",
   "license": "MIT",
   "repository": {
