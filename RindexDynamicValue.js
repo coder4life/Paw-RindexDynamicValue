@@ -19,8 +19,8 @@
     };
 
     var getPath = function(source, keypath) {
-        var regexValue = new RegExp("[A-Za-z0-9]*\\[([0-9*])\\]");
-        var regexReplace = new RegExp("\\*");
+        var regexValue = new RegExp("[A-Za-z0-9]*\\[([0-9]+|[\\*]+|[\\@f]+|[\\@l]+|[\\@m]+)\\]");
+        var regexReplace = new RegExp("\\*|\\@f|\\@l|\\@m");
         var pathItems = keypath.split('.');
         var pathList = [];
         var result;
@@ -30,11 +30,20 @@
                 var regexTest = regexValue.test(pathItems[i]);
                 if (regexTest) {
                     var regexResult = regexValue.exec(pathItems[i]);
+                    var length = getLength(source, pathList, pathItems[i]);
                     if (regexResult[1] === '*') {
-                        var length = getLength(source, pathList, pathItems[i]);
                         var rIndex = random(length - 1);
                         pathList.push(pathItems[i].replace(regexReplace, rIndex));
-                    } else if (isInteger(parseInt(regexResult[1]))) {
+                    } else if(regexResult[1] === '@f') {
+                        pathList.push(pathItems[i].replace(regexReplace, 0));
+                    }
+                    else if(regexResult[1] === '@l') {
+                        pathList.push(pathItems[i].replace(regexReplace, length - 1));
+                    }
+                    else if(regexResult[1] === '@m') {
+                        pathList.push(pathItems[i].replace(regexReplace, Math.round((length - 1)/2)));
+                    }
+                    else if (isInteger(parseInt(regexResult[1]))) {
                         pathList.push(pathItems[i]);
                     } else {
                         throw "Error with your array syntax key[value], please check...";
@@ -49,7 +58,7 @@
     };
 
     var getLength = function(source, pathList, pathItem) {
-        var regex = new RegExp("([A-Za-z0-9]*)\\[[0-9*]+\\]");
+        var regex = new RegExp("([A-Za-z0-9]*)\\[[0-9]+|[\\*]+|[\\@f]+|[\\@l]+|[\\@m]+\\]");
         var path = pathList.join('.');
         var regexResult = regex.exec(pathItem);
         var lastRequest = getLastRequest(source);
