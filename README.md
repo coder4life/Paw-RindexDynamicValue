@@ -14,12 +14,12 @@ from the dependent result of the request set.
 ## Ruleset
 
 ```javascript
-users[*].name; // random index of a user's name
-users[*].friends[*].name; // random index of a user; and random index of that user friend's name
-users[@f].name; // first index of user's name
-users[@m].name; // middle index of user's name
-users[@l].name; // last index of user's name
-users[2].name; // third index of user's name (follows normal array access)
+users[*].name; // random index of users list and name
+users[*].friends[*].name; // random index users list; and random index of that user friends list and name
+users[@f].name; // first index of users list and name
+users[@m].name; // middle index of users list and name
+users[@l].name; // last index of users list and name
+users[2].name; // third index of users list and name (follows normal array access)
 ```
 
 ## Steps to Use
