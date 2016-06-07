@@ -45,4 +45,4 @@ users[2].name; // third index of user's name (follows normal array access)
 
 ## License
 
-See [](LICENSE.md)
+See [LICENSE.md](/LICENSE.md)
