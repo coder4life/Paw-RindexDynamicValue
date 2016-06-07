@@ -24,19 +24,19 @@ users[2].name; // third index of user's name (follows normal array access)
 
 ## Steps to Use
 
-1. Make a request for dependent data for the NEW Request
+**1. Make a request for dependent data for the NEW Request**
 ![](/images/step1_rindex.jpg?raw=true "Step 1")
 
-2. From EXISTING Request copy a key path (we will change request later)
+**2. From EXISTING Request copy a key path (we will change request later)**
 ![](/images/step2_rindex.jpg?raw=true "Step 2")
 
-3. In the NEW Request type the paw dynamic variable.
+**3. In the NEW Request type the paw dynamic variable.**
 ![](/images/step3_rindex.jpg?raw=true "Step 3")
 
-4. Copy and paste the keypath from the EXISTING to the NEW Request.
+**4. Copy and paste the keypath from the EXISTING to the NEW Request.**
 ![](/images/step4_rindex.jpg?raw=true "Step 4")
 
-5a. Change keypath according to the rules outlined above.
+**5a. Change keypath according to the rules outlined above.**
 ![](/images/step5_rindex.jpg?raw=true "Step 5")
 
 ### OR
