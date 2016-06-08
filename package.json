@@ -21,7 +21,7 @@
     "browserify": "^13.0.0"
   },
   "scripts": {
-    "build": "rm -rf dist/ && BUILD_ENV=build ./node_modules/.bin/browserify",
+    "build": "rm -rf dist/ && BUILD_ENV=build ./node_modules/.bin/browserify ./src/RindexDynamicValue.js -o ./build/com.coder4life.PawExtensions.RindexDynamicValue/RindexDynamicValue.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
