@@ -21,6 +21,7 @@
     "browserify": "^13.0.0"
   },
   "scripts": {
+    "build": "rm -rf dist/ && BUILD_ENV=build ./node_modules/.bin/browserify",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

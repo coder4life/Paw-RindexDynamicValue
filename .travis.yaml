@@ -1,0 +1,13 @@
+language: node_js
+before_script:
+- make build
+before_deploy:
+- make archive
+deploy:
+  provider: releases
+  file: build/RindexDynamicValue.zip
+  skip_cleanup: true
+  on:
+    tags: true
+    all_branches: true
+repo: coder4life/Paw-RindexDynamicValue
