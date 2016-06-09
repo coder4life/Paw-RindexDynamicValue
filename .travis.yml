@@ -1,8 +1,8 @@
 language: node_js
 before_script:
-- make build
+  - make build
 before_deploy:
-- make archive
+  - make archive
 deploy:
   provider: releases
   file: build/RindexDynamicValue.zip
