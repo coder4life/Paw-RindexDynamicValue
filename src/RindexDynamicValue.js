@@ -117,7 +117,7 @@
     RindexDynamicValue.title = "Rindex";
 
 // link to the Dynamic Value documentation
-    RindexDynamicValue.help = "https://github.com/coder4life/README.md";
+    RindexDynamicValue.help = "https://github.com/coder4life/Paw-RindexDynamicValue";
 
 // inputs
     RindexDynamicValue.inputs = [
