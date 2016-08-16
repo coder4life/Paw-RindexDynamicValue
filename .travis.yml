@@ -1,12 +1,14 @@
 language: node_js
 script:
-  - make build
-  - make archive
+- make build
+- make archive
 deploy:
   provider: releases
+  api_key:
+    secure: DxCwBQsg/76EJQcM3BXgVMNQfusPV6znUlIGqjeqYh9U5hl9npHYKa5PjQb6IYIi1QL3GitfUAnwwpQqwKv/yjK3fSfZOUa6FZpoX/O5D/6vhlP+WYv8lIGG2mPajKQrKC9vEoEXAhX2OoaLj+t+ZCOgvFDd9scJqNJe8dUehlft56cn/TGzUDPe6at+LN/17pqLZo/rXjUrERyxr8voGJdUXEBL6lY3p3xFlhxmR9nh0PW6Mip8+WY01B422Kw4Fy7aMjw5wGhJhgA15xNSCwLIunS5otJtVN+5GakGn5yBH/4+o4S07Ek/iEqYdJDgVPp7A4/7mhx9mZF61snjK1mdh7HgdlGAt9PwW7cIzylJpRO7YTij1IbjNGWYa6Nu3mlltnFnhMcCRg6xWZKyp+WjkdSIK9yymjVhaBrRs877eVWDTmo2Y+o/ymoEv4TiEkN+nVUzQmXSCFUkdK1Jj8TXPeLM0fvqX7T0z3nKARN3/x00jD4X34n9Gfrra1CFvCh1gHwiO3fPKyPGuiwVbJFQMV7BdYLI9Zdq8dJKl9QzAdBW43BdCFxtwnWz3+1xfXxPs8Ty2yBMGMtvLD9SGJ5CBML02yi7eN+RtHzFVG0B4edoT5WCX4PHH3v9e9PgtyT7Cy2Do1kCY7y9NiL5wMehCpBFg5+QLyesXW1n98g=
   file: build/RindexDynamicValue.zip
   skip_cleanup: true
   on:
     tags: true
     all_branches: true
-repo: coder4life/Paw-RindexDynamicValue
+    repo: coder4life/Paw-RindexDynamicValue
