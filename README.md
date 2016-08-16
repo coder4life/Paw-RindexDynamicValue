@@ -2,7 +2,7 @@
 
 
 ## Introduction 
-A Paw Extension that find a random index path based on another request. Also includes specific aliased index lookup.
+A Paw Extension to find a random index path based on another request. Also includes specific aliased index lookup.
 
 ## How to Use
 
