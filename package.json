@@ -1,6 +1,6 @@
 {
   "name": "com.coder4life.PawExtensions.RindexDynamicValue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rindex code.",
   "main": "RindexDynamicValue.js",
   "author": "Joshua Weiss",
@@ -10,18 +10,17 @@
     "url": "https://github.com/coder4life/paw-rindexdynamicvalue.git"
   },
   "dependencies": {
-    "html-entities": "^1.2.0",
-    "lodash.escaperegexp": "^4.1.1",
-    "lodash.get": "^4.2.1",
-    "lodash.isinteger": "^4.0.2",
-    "lodash.random": "^3.1.4",
-    "lodash.size": "^4.0.6"
+    "html-entities": "^1.2.1",
+    "lodash.escaperegexp": "^4.1.2",
+    "lodash.get": "^4.4.2",
+    "lodash.random": "^3.2.0",
+    "lodash.size": "^4.2.0"
   },
   "devDependencies": {
     "browserify": "^13.0.0"
   },
   "scripts": {
     "build": "BUILD_ENV=build ./node_modules/.bin/browserify ./src/RindexDynamicValue.js -o ./build/com.coder4life.PawExtensions.RindexDynamicValue/RindexDynamicValue.js",
-    "test": "exit 0"
+    "dev": "BUILD_ENV=build ./node_modules/.bin/browserify ./src/RindexDynamicValue.js -o ~/Library/Containers/com.luckymarmot.Paw/Data/Library/Application\\ Support/com.luckymarmot.Paw/Extensions/com.coder4life.PawExtensions.RindexDynamicValue/RindexDynamicValue.js"
   }
 }
